@@ -1,4 +1,4 @@
-/*@ÎÄ¼şÃû: StudentServiceImpl.java  @´´½¨ÈË: ĞÏ½¡   @´´½¨ÈÕÆÚ: 2011-9-8 ÏÂÎç1:41:41*/
+/*@æ–‡ä»¶å: StudentServiceImpl.java  @åˆ›å»ºäºº: é‚¢å¥   @åˆ›å»ºæ—¥æœŸ: 2011-9-8 ä¸Šåˆ10:55:02*/
 package com.promise.study.service.impl;
 
 import com.promise.study.domain.Student;
@@ -6,17 +6,17 @@ import com.promise.study.domain.StudentPK;
 import com.promise.study.service.StudentService;
 
 /**   
- * @ÀàÃû: StudentServiceImpl.java 
- * @°üÃû: com.promise.study.service.impl 
- * @ÃèÊö: TODO(ÓÃÒ»¾ä»°ÃèÊö¸ÃÎÄ¼ş×öÊ²Ã´) 
- * @×÷Õß: ĞÏ½¡ xingjian@yeah.net   
- * @ÈÕÆÚ: 2011-9-8 ÏÂÎç1:41:41 
- * @°æ±¾ V1.0   
+ * @ç±»å: StudentServiceImpl.java 
+ * @åŒ…å: com.promise.study.service.impl 
+ * @æè¿°: student service
+ * @ä½œè€…: é‚¢å¥ xingjian@yeah.net   
+ * @æ—¥æœŸ: 2011-9-8 ä¸Šåˆ10:55:02 
+ * @ç‰ˆæœ¬ V1.0   
  */
 public class StudentServiceImpl implements StudentService {
 
 	/**
-	 * ±£´æÑ§Éú
+	 * ä¿å­˜å­¦ç”Ÿ
 	 */
 	@Override
 	public boolean saveStudent(Student student) {
@@ -24,7 +24,7 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	/**
-	 * ±à¼­Ñ§Éú
+	 * ç¼–è¾‘å­¦ç”Ÿ
 	 */
 	@Override
 	public boolean editStudent(Student student) {
@@ -32,7 +32,7 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	/**
-	 * É¾³ıÑ§Éú
+	 * åˆ é™¤å­¦ç”Ÿ
 	 */
 	@Override
 	public boolean deleteStudent(Student student) {
@@ -40,7 +40,7 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	/**
-	 * »ñÈ¡Ñ§Éú
+	 * è·å–å­¦ç”Ÿ
 	 */
 	@Override
 	public boolean getStudentByID(StudentPK studentPK) {

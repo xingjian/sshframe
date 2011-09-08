@@ -1,21 +1,21 @@
-/*@ÎÄ¼şÃû: StudentPK.java  @´´½¨ÈË: ĞÏ½¡   @´´½¨ÈÕÆÚ: 2011-9-8 ÉÏÎç11:25:48*/
+/*@æ–‡ä»¶å: StudentPK.java  @åˆ›å»ºäºº: é‚¢å¥   @åˆ›å»ºæ—¥æœŸ: 2011-9-8 ä¸Šåˆ10:55:02*/
 package com.promise.study.domain;
 
 import java.io.Serializable;
 
 /**   
- * @ÀàÃû: StudentPK.java 
- * @°üÃû: com.promise.study.domain 
- * @ÃèÊö: StudentÀàÖ÷¼ü
- * @×÷Õß: ĞÏ½¡ xingjian@yeah.net   
- * @ÈÕÆÚ: 2011-9-8 ÉÏÎç11:25:48 
- * @°æ±¾ V1.0   
+ * @ç±»å: StudentPK.java 
+ * @åŒ…å: com.promise.study.domain 
+ * @æè¿°: å¤åˆä¸»é”® 
+ * @ä½œè€…: é‚¢å¥ xingjian@yeah.net   
+ * @æ—¥æœŸ: 2011-9-8 ä¸Šåˆ10:55:02 
+ * @ç‰ˆæœ¬ V1.0   
  */
 public class StudentPK implements Serializable{
 	
-	private String stCode;//Ñ§Éú±àÂë
+	private String stCode;//å­¦ç”Ÿç¼–å·
 	
-	private String stNum;//±àºÅ
+	private String stNum;//å­¦ç”Ÿå·
 	
 	public String getStCode() {
 		return stCode;

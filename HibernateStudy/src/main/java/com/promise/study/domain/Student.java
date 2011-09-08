@@ -1,4 +1,4 @@
-/*@ÎÄ¼şÃû: Student.java  @´´½¨ÈË: ĞÏ½¡   @´´½¨ÈÕÆÚ: 2011-9-8 ÉÏÎç10:55:02*/
+/*@æ–‡ä»¶å: Student.java  @åˆ›å»ºäºº: é‚¢å¥   @åˆ›å»ºæ—¥æœŸ: 2011-9-8 ä¸Šåˆ10:55:02*/
 package com.promise.study.domain;
 
 import java.io.Serializable;
@@ -6,16 +6,16 @@ import java.io.Serializable;
 import javax.persistence.EmbeddedId;
 
 /**   
- * @ÀàÃû: Student.java 
- * @°üÃû: com.promise.study.domain 
- * @ÃèÊö: ²âÊÔÀı×Ó,²ÉÓÃ¸´ºÏÖ÷¼ü 
- * @×÷Õß: ĞÏ½¡ xingjian@yeah.net   
- * @ÈÕÆÚ: 2011-9-8 ÉÏÎç10:55:02 
- * @°æ±¾ V1.0   
+ * @ç±»å: Student.java 
+ * @åŒ…å: com.promise.study.domain 
+ * @æè¿°: æµ‹è¯•ä¾‹å­,é‡‡ç”¨å¤åˆä¸»é”® 
+ * @ä½œè€…: é‚¢å¥ xingjian@yeah.net   
+ * @æ—¥æœŸ: 2011-9-8 ä¸Šåˆ10:55:02 
+ * @ç‰ˆæœ¬ V1.0   
  */
 public class Student implements Serializable{
 	
-	private StudentPK studentPK;//¸´ºÏÖ÷¼ü
+	private StudentPK studentPK;//å¤åˆä¸»é”®
 	
 	private String name;
 	

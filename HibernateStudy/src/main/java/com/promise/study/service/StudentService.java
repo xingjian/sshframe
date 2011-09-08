@@ -1,39 +1,39 @@
-/*@ÎÄ¼şÃû: StudentService.java  @´´½¨ÈË: ĞÏ½¡   @´´½¨ÈÕÆÚ: 2011-9-8 ÉÏÎç10:57:07*/
+/*@æ–‡ä»¶å: StudentService.java  @åˆ›å»ºäºº: é‚¢å¥   @åˆ›å»ºæ—¥æœŸ: 2011-9-8 ä¸Šåˆ10:55:02*/
 package com.promise.study.service;
 
 import com.promise.study.domain.Student;
 import com.promise.study.domain.StudentPK;
 
 /**   
- * @ÀàÃû: StudentService.java 
- * @°üÃû: com.promise.study.service.impl 
- * @ÃèÊö: student service ½Ó¿Ú 
- * @×÷Õß: ĞÏ½¡ xingjian@yeah.net   
- * @ÈÕÆÚ: 2011-9-8 ÉÏÎç10:57:07 
- * @°æ±¾ V1.0   
+ * @æ¥å£å: StudentService.java 
+ * @åŒ…å: com.promise.study.service.impl 
+ * @æè¿°: student service
+ * @ä½œè€…: é‚¢å¥ xingjian@yeah.net   
+ * @æ—¥æœŸ: 2011-9-8 ä¸Šåˆ10:55:02 
+ * @ç‰ˆæœ¬ V1.0   
  */
 public interface StudentService {
 
 	/**
-	 * ±£´æÑ§Éú
+	 * ä¿å­˜å­¦ç”Ÿ
 	 * @param student
 	 * @return
 	 */
 	public boolean saveStudent(Student student);
 	/**
-	 * ±à¼­
+	 * ç¼–è¾‘å­¦ç”Ÿ
 	 * @param student
 	 * @return
 	 */
 	public boolean editStudent(Student student);
 	/**
-	 * É¾³ı
+	 * åˆ é™¤å­¦ç”Ÿ
 	 * @param student
 	 * @return
 	 */
 	public boolean deleteStudent(Student student);
 	/**
-	 * »ñÈ¡Ñ§Éú
+	 * è·å–å­¦ç”Ÿ
 	 * @return
 	 */
 	public boolean getStudentByID(StudentPK studentPK);
