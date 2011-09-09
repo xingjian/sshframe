@@ -1,6 +1,7 @@
 /*@文件名: StudentServiceImpl.java  @创建人: 邢健   @创建日期: 2011-9-8 上午10:55:02*/
 package com.promise.study.service.impl;
 
+import com.promise.hibernate.HibernatePersistenceService;
 import com.promise.study.domain.Student;
 import com.promise.study.domain.StudentPK;
 import com.promise.study.service.StudentService;
@@ -15,12 +16,14 @@ import com.promise.study.service.StudentService;
  */
 public class StudentServiceImpl implements StudentService {
 
+	public HibernatePersistenceService hibernatePersistanceService;
+
 	/**
 	 * 保存学生
 	 */
 	@Override
 	public boolean saveStudent(Student student) {
-		return false;
+		return hibernatePersistanceService.save(student);
 	}
 
 	/**
@@ -28,7 +31,7 @@ public class StudentServiceImpl implements StudentService {
 	 */
 	@Override
 	public boolean editStudent(Student student) {
-		return false;
+		return hibernatePersistanceService.update(student);
 	}
 
 	/**
@@ -36,15 +39,23 @@ public class StudentServiceImpl implements StudentService {
 	 */
 	@Override
 	public boolean deleteStudent(Student student) {
-		return false;
+		return hibernatePersistanceService.delete(student);
 	}
 
 	/**
 	 * 获取学生
 	 */
 	@Override
-	public boolean getStudentByID(StudentPK studentPK) {
-		return false;
+	public Student getStudentByID(StudentPK studentPK) {
+		return (Student)hibernatePersistanceService.get(Student.class,studentPK);
+	}
+	
+	/**
+	 * 设置hibernatePersistanceService
+	 * @param hibernatePersistanceService
+	 */
+	public void setHibernatePersistanceService(HibernatePersistenceService hps) {
+		this.hibernatePersistanceService = hps;
 	}
 
 }

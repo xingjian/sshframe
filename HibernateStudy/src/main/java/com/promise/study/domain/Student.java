@@ -4,6 +4,8 @@ package com.promise.study.domain;
 import java.io.Serializable;
 
 import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**   
  * @类名: Student.java 
@@ -13,6 +15,8 @@ import javax.persistence.EmbeddedId;
  * @日期: 2011-9-8 上午10:55:02 
  * @版本 V1.0   
  */
+@Entity
+@Table(name="student")
 public class Student implements Serializable{
 	
 	private StudentPK studentPK;//复合主键

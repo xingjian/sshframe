@@ -36,5 +36,5 @@ public interface StudentService {
 	 * 获取学生
 	 * @return
 	 */
-	public boolean getStudentByID(StudentPK studentPK);
+	public Student getStudentByID(StudentPK studentPK);
 }
