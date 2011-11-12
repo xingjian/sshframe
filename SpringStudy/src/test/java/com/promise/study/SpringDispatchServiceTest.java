@@ -1,9 +1,8 @@
 /*@文件名: SpringDispatchServiceTest.java  @创建人: 邢健   @创建日期: 2011-9-16 下午1:51:37*/
 package com.promise.study;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**   
  * @类名: SpringDispatchServiceTest.java 
@@ -20,7 +19,7 @@ public class SpringDispatchServiceTest {
 	 */
 	@Test
 	public void testSpringDispatchByAnnotation() {
-		fail("Not yet implemented");
+		new ClassPathXmlApplicationContext("/applicationContext-task.xml");
 	}
 
 }

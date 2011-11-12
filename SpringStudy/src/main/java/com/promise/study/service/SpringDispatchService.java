@@ -11,4 +11,8 @@ package com.promise.study.service;
  */
 public interface SpringDispatchService {
 
+	/**
+	 * 打印日志
+	 */
+	public void printLog();
 }

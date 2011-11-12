@@ -6,7 +6,7 @@
 	<!-- 测试类 -->
 	<bean id="springDispatchService" class="com.promise.study.service.impl.SpringDispatchServiceImpl" />
 	<bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
-		<property name="targetObject" ref="springDispatchService" />
+		<property name="targetBeanName" ref="springDispatchService" />
 		<property name="targetMethod" value="printLog" />
 		<property name="concurrent" value="false" /> 
 	</bean>

@@ -13,4 +13,14 @@ import com.promise.study.service.SpringDispatchService;
  */
 public class SpringDispatchServiceImpl implements SpringDispatchService{
 
+	public int count = 0;
+	/**
+	 * 打印日志
+	 */
+	@Override
+	public void printLog() {
+		System.out.println("第"+count+"次打印日志!");
+		count++;
+	}
+
 }
