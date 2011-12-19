@@ -5,6 +5,9 @@
 	<title>loginSuccess</title>
 </head>
 <body>
-	登录成功！
+	 <div>
+          <h4>欢迎你!</h4><font color="red">${requestScope.userName}</font>
+          <h4>你登录的密码是<h4><font color="red">${password}</font>
+      </div>
 </body>
 </html>
