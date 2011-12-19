@@ -3,9 +3,14 @@
 "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-	<package name="default" extends="struts-default">
-		<action name="login" class="com.pbsoft.common.web.LoginAction">
-			<result name="success">index.jsp</result>
+	<package name="default" extends="struts-default" namespace="/">
+		<action name="login" method="checkLogin" class="loginAction" >
+			<result name="success">pages\common\loginSuccess.jsp</result>
+			<result name="failture">pages\common\loginError.jsp</result>
+		</action>
+		<action name="register" method="savePBUser" class="registerAction" >
+			<result name="success">pages\common\registerSuccess.jsp</result>
+			<result name="failture">pages\common\registerError.jsp</result>
 		</action>
 	</package>
 </struts>
