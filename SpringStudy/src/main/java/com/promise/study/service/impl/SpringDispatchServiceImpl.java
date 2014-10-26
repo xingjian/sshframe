@@ -1,6 +1,9 @@
 /*@文件名: SpringDispatchServiceImpl.java  @创建人: 邢健   @创建日期: 2011-9-16 下午1:21:42*/
 package com.promise.study.service.impl;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import com.promise.study.service.SpringDispatchService;
 
 /**   
@@ -19,7 +22,7 @@ public class SpringDispatchServiceImpl implements SpringDispatchService{
 	 */
 	@Override
 	public void printLog() {
-		System.out.println("第"+count+"次打印日志!");
+		System.out.println("第"+count+"次打印日志!"+(new SimpleDateFormat("yyyy-MM-dd HHmmss")).format(new Date()));
 		count++;
 	}
 
