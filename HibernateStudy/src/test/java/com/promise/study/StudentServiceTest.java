@@ -1,6 +1,9 @@
 /*@文件名: StudentServiceTest.java  @创建人: 邢健   @创建日期: 2011-9-9 下午2:02:16*/
 package com.promise.study;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -97,5 +100,25 @@ public class StudentServiceTest {
 		pk.setStNum("031");
 		Student student = studentService.getStudentByID(pk);
 		Assert.assertEquals("王小二",student.getName());
+	}
+	
+	@Test
+	public void testSaveList(){
+		List<Student> list = new ArrayList<Student>();
+		for(int i=0;i<10;i++){
+			StudentPK pk = new StudentPK();
+			pk.setStCode("002");
+			pk.setStNum("032");
+			Student student = new Student();
+			student.setStudentPK(pk);
+			student.setAddress("海淀区");
+			student.setName("王小二"+i);
+			student.setAge(15);
+			list.add(student);
+		}
+		List<Student> rList = studentService.saveStudents(list);
+		for(Student s:rList){
+			System.out.println(s.getStudentPK().getStCode()+"___"+s.getName());
+		}
 	}
 }
