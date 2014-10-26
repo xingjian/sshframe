@@ -2,6 +2,8 @@
 package com.promise.hibernate;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.hibernate.Session;
 
@@ -37,6 +39,7 @@ public class HibernatePersistenceServiceImpl extends HibernateUtil implements
 		}catch(Exception exception){
 			this.session.getTransaction().rollback();
 			retBoolean = false;
+			throw new Exception(exception);
 		}finally{
 			this.session.close();
 			return retBoolean;
@@ -105,5 +108,17 @@ public class HibernatePersistenceServiceImpl extends HibernateUtil implements
 		Object object = this.session.load(entity,id);
 		this.session.close();
 		return object;
+	}
+
+	@Override
+	public <T> List<T> save(List<T> list) {
+		List<T> rList = new ArrayList<T>();
+		for(T t:list){
+			boolean boo = save(t);
+			if(!boo){
+				rList.add(t);
+			}
+		}
+		return rList;
 	}
 }

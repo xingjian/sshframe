@@ -2,6 +2,7 @@
 package com.promise.hibernate;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**   
  * @类名: HibernatePersistenceService.java 
@@ -44,4 +45,10 @@ public interface HibernatePersistenceService {
 	 * @return
 	 */
 	public Object load(Class entity,Serializable id);
+	/**
+	 * 批量保存对象
+	 * @param list
+	 * @return
+	 */
+	public <T> List<T> save(List<T> list);
 }

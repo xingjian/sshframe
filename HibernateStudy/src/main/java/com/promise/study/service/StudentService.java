@@ -1,6 +1,8 @@
 /*@文件名: StudentService.java  @创建人: 邢健   @创建日期: 2011-9-8 上午10:55:02*/
 package com.promise.study.service;
 
+import java.util.List;
+
 import com.promise.study.domain.Student;
 import com.promise.study.domain.StudentPK;
 
@@ -37,4 +39,10 @@ public interface StudentService {
 	 * @return
 	 */
 	public Student getStudentByID(StudentPK studentPK);
+	/**
+	 * 批量保存学生
+	 * @param list
+	 * @return
+	 */
+	public List<Student> saveStudents(List<Student> list);
 }

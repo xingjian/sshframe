@@ -1,6 +1,8 @@
 /*@文件名: StudentServiceImpl.java  @创建人: 邢健   @创建日期: 2011-9-8 上午10:55:02*/
 package com.promise.study.service.impl;
 
+import java.util.List;
+
 import com.promise.hibernate.HibernatePersistenceService;
 import com.promise.study.domain.Student;
 import com.promise.study.domain.StudentPK;
@@ -56,6 +58,11 @@ public class StudentServiceImpl implements StudentService {
 	 */
 	public void setHibernatePersistanceService(HibernatePersistenceService hps) {
 		this.hibernatePersistanceService = hps;
+	}
+
+	@Override
+	public List<Student> saveStudents(List<Student> list) {
+		return hibernatePersistanceService.save(list);
 	}
 
 }
