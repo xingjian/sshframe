@@ -33,6 +33,11 @@ public class HibernatePersistenceManagerImpl<T extends Serializable> implements 
 	}
 	
 	
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
+
 	/**
 	 * 保存实体对象
 	 */

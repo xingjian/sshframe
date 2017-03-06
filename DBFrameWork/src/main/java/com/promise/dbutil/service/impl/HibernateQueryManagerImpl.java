@@ -53,6 +53,10 @@ public class HibernateQueryManagerImpl<T extends Serializable> implements QueryM
 	@Resource(name="sessionFactory")
     private SessionFactory sessionFactory;
 	
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
 	protected final Session getCurrentSession() {
 	    return sessionFactory.getCurrentSession();
 	}
